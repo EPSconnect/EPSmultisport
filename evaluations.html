@@ -8,7 +8,7 @@ D3:{title:'Partager des règles, assumer des rôles et des responsabilités',ele
 D4:{title:'Apprendre à entretenir sa santé par une activité physique régulière',elements:['Évaluer la quantité et la qualité de son activité physique quotidienne dans et hors l’école.','Connaître et appliquer des principes d’une bonne hygiène de vie.','Adapter l’intensité de son engagement physique à ses possibilités pour ne pas se mettre en danger.']}
 };
 const activities={
-basket:{name:'Basketball',ind:[['Conserver et faire progresser le ballon','D1',1],['Se démarquer et proposer une solution','D1',1],['Choisir une action adaptée (passe, dribble, tir)','D1',1],['Observer et analyser le jeu','D2',1],['Tenir un rôle (observateur / arbitre)','D3',0]],selected:[['D1',1],['D2',1],['D3',0]]},
+basket:{name:'Basketball',ind:[['Conserver et faire progresser le ballon','D1',1],['Se démarquer et proposer une solution','D1',0],['Choisir une action adaptée (passe, dribble, tir)','D1',1],['Se replacer en attaque et en défense','D1',0],['Tenir un rôle (observateur / arbitre)','D3',0]],selected:[['D1',1],['D1',0],['D3',0]]},
 course:{name:'Course de durée',ind:[['Régularité de l’allure','D1',0],['Observer et ajuster son allure','D2',1],['Adapter son effort à ses possibilités','D4',2]],selected:[['D1',0],['D2',1],['D4',2]]}
 };const labels=['','Maîtrise insuffisante','Maîtrise fragile','Maîtrise satisfaisante','Très bonne maîtrise'];let unlocked=false,activity='basket',count=12,data={},overrides={},rosters={},currentClass='6e1';const $=x=>document.getElementById(x);
 function escapeName(v){return String(v).replace(/[&<>\"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',"'":'&#39;'}[c]))}
